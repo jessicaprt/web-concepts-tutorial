@@ -1,0 +1,95 @@
+/** main page and shared **/
+body {
+    font-family: 'Century Gothic';
+    margin: 0;
+}
+
+nav {
+    padding: 10px 0px;
+    background-color: #333;
+    width: 100vw;
+}
+
+nav li {
+    display: inline;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: rgba(255,255,255,0.4)
+}
+
+.nav {
+    position: fixed;
+}
+
+.sec {
+    padding-top: 15vh;
+    height: 100vh;
+    text-align: center;
+}
+
+.sec h2 {
+    margin-bottom: 50px;
+}
+
+#unit1 {
+    background-color: rgba(69,56,127,1);
+    color: #fff;
+}
+
+#unit2 {
+    background-color: rgba(200,189,255,1);
+    color: #fff;
+}
+
+#unit3 {
+    background-color: rgba(138,112,255,1);
+    color: #fff;
+}
+
+.button {
+    padding: 13px 20px;
+    border-radius: 9px;
+    border: 2px solid rgba(255,255,255,255.4);
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 15px;
+}
+
+.unit-title {
+    text-align: center;
+}
+
+/** Unit 1**/
+
+.overview {
+    padding: 5px 30px;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.u1-sec {
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+
+.embed-code {
+    font-family: 'Consolas', sans-serif;
+    font-size: 13px;
+    padding: 3px 15px;
+    margin: 20px 15px;
+    background-color: #EEE;
+    list-style: none;
+    width: 80%
+}
+
+/** Unit 2 **/

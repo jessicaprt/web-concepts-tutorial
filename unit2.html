@@ -37,27 +37,101 @@
             <hr>
             <p>Similar with CSS in the previous unit, there are also multiple ways of incorporating a JS script to a webpage:</p>
             <ul>
-                <li><h3>Embedded scripts</h3></li>
-                <ul>
-                    <li>like the way we embed style sheets in an HTML, we can do a similar thing to JavaScript by adding in a script in between the  &lt;script&gt; tag (HTML immediately knows that what follows is a script). Th difference is that an embedded style scheet is strictly enclosed in the &lt;head/&gt; tag, and a script can go anywhere in the code.</li>
-                    <li><em>Example:</em></li>
-                    <li class="embed-code">
+                <li><h3>Embedded scripts</h3>
+					<ul>
+					  <li>like the way we embed style sheets in an HTML, we can do a similar thing to JavaScript by adding in a script in between the  &lt;script&gt; tag (HTML immediately knows that what follows is a script). The difference is that an embedded style scheet is strictly enclosed in the &lt;head/&gt; tag, and a script can go anywhere in the code.</li>
+					  <li class="example-list"><em>Example:</em></li>
+					  <li class="embed-code">
+						  &lt;head&gt;</br>
+						  &nbsp;&nbsp;
+						  &lt;meta-charset="utf-8"&gt;</br>
+						  &nbsp;&nbsp;
+						  &lt;title&gt;Sample Embedded script&lt;/title&gt;</br>
+						  &nbsp;&nbsp;
+						  &lt;script type="text/javascript"&gt;</br>
+						  <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+						  document.writeln("&lt;h1/&gt;Hello World&lt;/h1&gt;");</strong></br>
+						  &nbsp;&nbsp;
+						  &lt;/script&gt;</br>
+						  &lt;/head&gt;</br>
+					  </li>
+					</ul>
+  				</li>
+  				<li><h3>External Scripts</h3>
+				    <ul>
+                        <li>Again, similar to CSS, we can add external scripts by having it as a source (src) to the script tag</li>
+                        <li>A JS script can be saved as a .js file</li>
+                        <li class="example-list"><em>Example:</em></li>
+                        <li class="embed-code">
                             &lt;head&gt;</br>
                             &nbsp;&nbsp;
                             &lt;meta-charset="utf-8"&gt;</br>
                             &nbsp;&nbsp;
                             &lt;title&gt;Sample Embedded script&lt;/title&gt;</br>
                             &nbsp;&nbsp;
-                            &lt;script-type="text/javascript"&gt;</br>
-                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;
-                            document.writeln("&lt;h1/&gt;Hello World&lt;/h1&gt;");</strong></br>
-                            &nbsp;&nbsp;
+                            &lt;script src="app.js" type="text/javascript"&gt;
                             &lt;/script&gt;</br>
                             &lt;/head&gt;</br>
-                        </li>
-                </ul>
+					  	</li>
+                    </ul>
+  				</li>
             </ul>
         </div>
+  		<div class="u1-sec">
+            <h2>Displaying a text in an alert dialog</h2>
+            <hr>
+                <p>JavaScript can implement the "pop-ups" that you can see on a web page</p>
+                <ul>
+                    <li>To create and alert dialog:</li>
+                    <li class="example-list"><em>Example:</em></li>
+                        <li class="embed-code">
+						  &lt;head&gt;</br>
+						  &nbsp;&nbsp;
+						  &lt;meta-charset="utf-8"&gt;</br>
+						  &nbsp;&nbsp;
+						  &lt;title&gt;Sample Embedded script&lt;/title&gt;</br>
+						  &nbsp;&nbsp;
+						  &lt;script type="text/javascript"&gt;</br>
+						  <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+						  window.alert("Welcome to JavaScript Programming!");</strong></br>
+						  &nbsp;&nbsp;
+						  &lt;/script&gt;</br>
+						  &lt;/head&gt;</br>
+					  	</li>
+					<li class="example-list"> <em>Output:</em></li>
+						<li class="example-list"><img src="assets/images/unit1-1.JPG" class="screen-cap"></li>
+                </ul>
+  		</div>
+
+		<div class="u1-sec">
+			<h2>Sending a prompt that requires user to type in an input</h2>
+			<hr>
+			<p>This is another option for having a pop-up in a web page. JavaScript has a method for having the dialog window promt the user for input</p>
+			<ul>
+				<li class="example-list"><em>Example:</em></li>
+				<li class="embed-code">
+				  faveFood = window.prompt("What's your favourite food?");</strong>
+				</li>
+				<li class="example-list"> <em>Output:</em></li>
+					<li class="example-list"><img src="assets/images/unit1-2.JPG" class="screen-cap"></li>
+				<li>Here's another exaple of having a default message on the prompt box before the user types in a message</li>
+				<li class="example-list"><em>Example:</em></li>
+				<li class="embed-code">
+				  faveFood = window.prompt("What's your favourite food?", "pizza");</strong>
+				  &nbsp;&nbsp;
+				</li>
+				<li class="example-list"> <em>Output:</em></li>
+					<li class="example-list"><img src="assets/images/unit1-3.JPG" class="screen-cap"></li>
+			</ul>
+		</div>
+
+		<div class="u1-sec">
+			<h2>Dynamic Rendeting in JavaScript</h2>
+			<hr>
+			<ul>
+				<li>JavaScript can do variables, arithmetic, equality and relational operators</li>
+			</ul>
+		</div>
     </div>
     
 </body>

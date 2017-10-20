@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Unit 2 | Client-sede Scriptiong in Javascript</title>
+    <title>Unit 2 | Client-side Scriptiong in Javascript</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -126,12 +126,76 @@
 		</div>
 
 		<div class="u1-sec">
-			<h2>Dynamic Rendeting in JavaScript</h2>
-			<hr>
-			<ul>
-				<li>JavaScript can do variables, arithmetic, equality and relational operators</li>
-			</ul>
+        <h2>Dynamic Rendering in JavaScript</h2>
+        <hr>
+        <p>JavaScript can do variables, arithmetic, equality and relational operators</p>
+        <ul>
+            <li><h3>Variables</h3>
+                <ul>
+                    <li>variables is a way of storing values in memory so that they can be retrieved and used later</li>
+                    <li class="example-list"><em>Example:</em></li>
+                    <li class="embed-code">
+                        var x = 5; //declaring an integer</br>
+                        var y = "Hello World" //declaring a string
+                    </li>
+                    <li>Note: "=" is the assignment operator. It is used to assign values to variables. This operator should not be mistaken for the equality operator "==" <em>to be discussed a little bit later</em>.</li>
+                </ul>
+            </li>
+            <li><h3>Arithmetic Operators</h3>
+                <ul>
+                    <li>to do basic arithmetic in JavaScript:</li>
+                    <ul>
+                        <li class="example-list"><em>Examples:</em></li>
+                        <li class="embed-code">
+                            var a = 5 + 3; // addition </br>
+                            var b = a - 4; // subtraction </br>
+                            var c = 6 * 7; // multiplication </br>
+                            var d = a / b; // division</br>
+                            var e = 9 % 2; // remainder (mod)
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+            <li><h3>Equality and Relational Operators</h3>
+                <ul>
+                    <li>This is used to compare values</li>
+                    <li>Comparing values is important in if..else statements and loops <em>(discussed in the next section)</em></li>
+                    <li>The result for doing equality and relational operators is a boolean: True or False</li>
+                    <ul>
+                        <li class="example-list"><em>Examples:</em></li>
+
+                        <li class="embed-code">
+                            var a = 5</br>
+                            var b = 3</br>
+                            var c = 5</br>
+                            </br>
+                            <em>// equality operators</em></br> 
+                            var d = a == 3; // equal to -- False </br>
+                            var e = a != 3 // not equal to -- True</br></br>
+                            <em>// relational operators</em></br>
+                            var f = a > b // greater than -- True</br>
+                            var g = b &lt; a // lessthan -- False</br>
+                            var h = a >= c // greater than or equal -- True</br>
+                            var i = b &lt;= c // greater than or equal -- True</br>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
 		</div>
+    <div class="u1-sec">
+        <h2>Functions in JavaScript</h2>
+        <hr>
+        <p>Functions is a way to group statements together so that it can be reused later. Having functions makes the code more readable, and it also helps redundancy when a block of code is used multiple times.</p>
+        <ul>
+            <li class="example-list"><em>Example:</em></li>
+            <li class="embed-code">
+                var x = additionFunc(4,10)</br>
+                </br>
+                function additionFunc(a,b) {</br>
+                &nbsp;&nbsp;return a + b;</br>
+                }</br>
+            </li>
     </div>
     
 </body>

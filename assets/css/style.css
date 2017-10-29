@@ -40,17 +40,20 @@ nav li a:hover {
 }
 
 #unit1 {
-    background-color: rgba(69,56,127,1);
+/*    background-color: rgba(69,56,127,1);*/
+    background-color: #75b1a9;
     color: #fff;
 }
 
 #unit2 {
-    background-color: rgba(200,189,255,1);
+/*    background-color: rgba(200,189,255,1);*/
+    background-color: #d9b44a;
     color: #fff;
 }
 
 #unit3 {
-    background-color: rgba(138,112,255,1);
+/*    background-color: rgba(138,112,255,1);*/
+    background-color: #4f6457;
     color: #fff;
 }
 
@@ -67,11 +70,16 @@ nav li a:hover {
     text-align: center;
 }
 
-/** Unit 1**/
-
+/** shared **/
 .overview {
     padding: 5px 30px;
 }
+
+.overview ul li {
+    margin: 10px 0px;
+}
+/** Unit 1**/
+
 
 .section {
     margin-top: 50px;
@@ -96,6 +104,7 @@ nav li a:hover {
 	border: solid 2px rgba(200, 200, 200, 0.8);
 	margin-left: 30px;
 	margin-bottom: 20px;
+  width: 30%;
 }
 
 .example-list {
@@ -103,3 +112,43 @@ nav li a:hover {
 }
 
 /** Unit 2 **/
+
+.u2-sec {
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+
+.u2-sec h2 {
+    color: #d9b44a;
+}
+
+.u2-sec h1 {
+    color: #d9b44a;
+}
+
+.u2-sec h3 {
+    color: #d9b44a;
+}
+
+.u2-sec li::before {
+    color: #d9b44a;
+}
+
+.unit2-overview {
+    background-color: #d9b44a;
+}
+
+.unit2-overview ul li {
+    list-style: none;
+}
+
+.unit2-overview ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.unit2-overview ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}

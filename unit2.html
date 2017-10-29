@@ -17,48 +17,65 @@
             </ul>
         </nav>
     </div>
-    <div class="unit-title">
+    <div class="overview unit2-overview">
         <h1>Unit 2: Client-side Scripting in JavaScript</h1>
-    </div>
-    <div class="section overview">
-        <h2>In this chapter:</h2>
+        <h2><em>In this chapter:</em></h2>
         <ul>
+            <li><a href="#u2-1"><strong>JavaScript</strong></a></li>
+            <ul>
+                <li><a href="u2-1-1">Displaying a line of text in a web page using JavaScript</a></li>
+                <li><a href="u2-1-2">Displaying a text in an alert dialog</a></li>
+                <li><a href="u2-1-3">Sending a prompt that requires user to type in an input</a></li>
+                <li><a href="u2-1-4">Dynamic Rendering in JavaScript</a></li>
+                <li><a href="u2-1-5">Functions in JavaScript</a></li>
+                <li><a href="u2-1-6">Control Statements in JavaScript</a></li>
+                <li><a href="u2-1-7">JavaScript Arrays</a></li>
+                <li><a href="u2-1-8">JavaScript HTML Document Object Model</a></li>
+            </ul></br>
+            <li><a href="#u2-2"><strong>Canvas</strong></a></li>
+            <ul>
+                <li><a href="u2-2-1">Canvas Coordinate System</a></li>
+                <li><a href="u2-2-2">Drawing Attributes</a></li>
+                <li><a href="u2-2-3">Drawing Complex Shapes With Paths</a></li>
+                <li><a href="u2-2-4">Drawing Arcs</a></li>
+            </ul>
         </ul>
     </div>
     <div id="js" class="section">
-        <div class="u1-sec">
+        
+        <div class="u2-sec" id="u2-1">
             <h1>JavaScript</h1>
             <ul>
                 <li>JavaScript is a scripting language to enhance the functionality and appearance of a web page. </li>
             </ul>
-        </div>
-        <div class="u1-sec">
+        </div>  
+        <div class="u2-sec" id="u2-1-1">
             <h2>Displaying a line of text in a web page using JavaScript</h2>
             <hr>
             <p>Similar with CSS in the previous unit, there are also multiple ways of incorporating a JS script to a webpage:</p>
             <ul>
                 <li><h3>Embedded scripts</h3>
-					<ul>
-					  <li>like the way we embed style sheets in an HTML, we can do a similar thing to JavaScript by adding in a script in between the  &lt;script&gt; tag (HTML immediately knows that what follows is a script). The difference is that an embedded style scheet is strictly enclosed in the &lt;head/&gt; tag, and a script can go anywhere in the code.</li>
-					  <li class="example-list"><em>Example:</em></li>
-					  <li class="embed-code">
-						  &lt;head&gt;</br>
-						  &nbsp;&nbsp;
-						  &lt;meta-charset="utf-8"&gt;</br>
-						  &nbsp;&nbsp;
-						  &lt;title&gt;Sample Embedded script&lt;/title&gt;</br>
-						  &nbsp;&nbsp;
-						  &lt;script type="text/javascript"&gt;</br>
-						  <strong>&nbsp;&nbsp;&nbsp;&nbsp;
-						  document.writeln("&lt;h1/&gt;Hello World&lt;/h1&gt;");</strong></br>
-						  &nbsp;&nbsp;
-						  &lt;/script&gt;</br>
-						  &lt;/head&gt;</br>
-					  </li>
-					</ul>
-  				</li>
-  				<li><h3>External Scripts</h3>
-				    <ul>
+                    <ul>
+                        <li>like the way we embed style sheets in an HTML, we can do a similar thing to JavaScript by adding in a script in between the  &lt;script&gt; tag (HTML immediately knows that what follows is a script). The difference is that an embedded style scheet is strictly enclosed in the &lt;head/&gt; tag, and a script can go anywhere in the code.</li>
+                        <li class="example-list"><em>Example:</em></li>
+                        <li class="embed-code">
+                            &lt;head&gt;</br>
+                            &nbsp;&nbsp;
+                            &lt;meta-charset="utf-8"&gt;</br>
+                            &nbsp;&nbsp;
+                            &lt;title&gt;Sample Embedded script&lt;/title&gt;</br>
+                            &nbsp;&nbsp;
+                            &lt;script type="text/javascript"&gt;</br>
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                            document.writeln("&lt;h1/&gt;Hello World&lt;/h1&gt;");</strong></br>
+                            &nbsp;&nbsp;
+                            &lt;/script&gt;</br>
+                            &lt;/head&gt;</br>
+                        </li>
+                    </ul>
+  				      </li>
+                <li><h3>External Scripts</h3>
+                    <ul>
                         <li>Again, similar to CSS, we can add external scripts by having it as a source (src) to the script tag</li>
                         <li>A JS script can be saved as a .js file</li>
                         <li class="example-list"><em>Example:</em></li>
@@ -72,130 +89,420 @@
                             &lt;script src="app.js" type="text/javascript"&gt;
                             &lt;/script&gt;</br>
                             &lt;/head&gt;</br>
-					  	</li>
+                        </li>
                     </ul>
-  				</li>
+                </li>
             </ul>
         </div>
-  		<div class="u1-sec">
+        <div class="u2-sec" id="u2-1-2">          
             <h2>Displaying a text in an alert dialog</h2>
             <hr>
-                <p>JavaScript can implement the "pop-ups" that you can see on a web page</p>
-                <ul>
-                    <li>To create and alert dialog:</li>
-                    <li class="example-list"><em>Example:</em></li>
+            <p>JavaScript can implement the "pop-ups" that you can see on a web page</p>
+            <ul>
+                <li>To create and alert dialog:</li>
+                <li class="example-list"><em>Example:</em></li>
+                <li class="embed-code">
+                    &lt;head&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;meta-charset="utf-8"&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;title&gt;Sample Embedded script&lt;/title&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;script type="text/javascript"&gt;</br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    window.alert("Welcome to JavaScript Programming!");</strong></br>
+                    &nbsp;&nbsp;
+                    &lt;/script&gt;</br>
+                    &lt;/head&gt;</br>
+                </li>
+                <li class="example-list"><em>Output:</em></li>
+                <li class="example-list"><img src="assets/images/unit1-1.JPG" class="screen-cap" /></li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-3">
+            <h2>Sending a prompt that requires user to type in an input</h2>
+            <hr>
+            <p>This is another option for having a pop-up in a web page. JavaScript has a method for having the dialog window promt the user for input</p>
+            <ul>
+                <li class="example-list"><em>Example:</em></li>
+                <li class="embed-code">
+                  faveFood = window.prompt("What's your favourite food?");</strong>
+                </li>
+                <li class="example-list"> <em>Output:</em></li>
+                  <li class="example-list"><img src="assets/images/unit1-2.JPG" class="screen-cap"></li>
+                <li>Here's another exaple of having a default message on the prompt box before the user types in a message</li>
+                <li class="example-list"><em>Example:</em></li>
+                <li class="embed-code">
+                  faveFood = window.prompt("What's your favourite food?", "pizza");</strong>
+                  &nbsp;&nbsp;
+                </li>
+                <li class="example-list"> <em>Output:</em></li>
+                  <li class="example-list"><img src="assets/images/unit1-3.JPG" class="screen-cap"></li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-4">
+            <h2>Dynamic Rendering in JavaScript</h2>
+            <hr>
+            <p>JavaScript can do variables, arithmetic, equality and relational operators</p>
+            <ul>
+                <li><h3>Variables</h3>
+                    <ul>
+                        <li>variables is a way of storing values in memory so that they can be retrieved and used later</li>
+                        <li class="example-list"><em>Example:</em></li>
                         <li class="embed-code">
-						  &lt;head&gt;</br>
-						  &nbsp;&nbsp;
-						  &lt;meta-charset="utf-8"&gt;</br>
-						  &nbsp;&nbsp;
-						  &lt;title&gt;Sample Embedded script&lt;/title&gt;</br>
-						  &nbsp;&nbsp;
-						  &lt;script type="text/javascript"&gt;</br>
-						  <strong>&nbsp;&nbsp;&nbsp;&nbsp;
-						  window.alert("Welcome to JavaScript Programming!");</strong></br>
-						  &nbsp;&nbsp;
-						  &lt;/script&gt;</br>
-						  &lt;/head&gt;</br>
-					  	</li>
-					<li class="example-list"> <em>Output:</em></li>
-						<li class="example-list"><img src="assets/images/unit1-1.JPG" class="screen-cap"></li>
-                </ul>
-  		</div>
+                            var x = 5; //declaring an integer</br>
+                            var y = "Hello World" //declaring a string
+                        </li>
+                        <li>Note: "=" is the assignment operator. It is used to assign values to variables. This operator should not be mistaken for the equality operator "==" <em>to be discussed a little bit later</em>.</li>
+                    </ul>
+                </li>
+                <li><h3>Arithmetic Operators</h3>
+                    <ul>
+                        <li>to do basic arithmetic in JavaScript:</li>
+                        <ul>
+                            <li class="example-list"><em>Examples:</em></li>
+                            <li class="embed-code">
+                                var a = 5 + 3; // addition </br>
+                                var b = a - 4; // subtraction </br>
+                                var c = 6 * 7; // multiplication </br>
+                                var d = a / b; // division</br>
+                                var e = 9 % 2; // remainder (mod)
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><h3>Equality and Relational Operators</h3>
+                    <ul>
+                        <li>This is used to compare values</li>
+                        <li>Comparing values is important in if..else statements and loops <em>(discussed in the next section)</em></li>
+                        <li>The result for doing equality and relational operators is a boolean: True or False</li>
+                        <ul>
+                            <li class="example-list"><em>Examples:</em></li>
+                            <li class="embed-code">
+                                var a = 5</br>
+                                var b = 3</br>
+                                var c = 5</br>
+                                </br>
+                                <em>// equality operators</em></br> 
+                                var d = a == 3; // equal to -- False </br>
+                                var e = a != 3 // not equal to -- True</br></br>
+                                <em>// relational operators</em></br>
+                                var f = a > b // greater than -- True</br>
+                                var g = b &lt; a // lessthan -- False</br>
+                                var h = a >= c // greater than or equal -- True</br>
+                                var i = b &lt;= c // greater than or equal -- True</br>
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-5">
+            <h2>Functions in JavaScript</h2>
+            <hr>
+            <p>Functions is a way to group statements together so that it can be reused later. Having functions makes the code more readable, and it also helps redundancy when a block of code is used multiple times.</p>
+            <ul>
+                <li class="example-list"><em>Example:</em></li>
+                <li class="embed-code">
+                    var x = additionFunc(4,10)</br>
+                    </br>
+                    function additionFunc(a,b) {</br>
+                    &nbsp;&nbsp;return a + b;</br>
+                    }</br>
+                </li>
+        </div>
+        <div class="u2-sec" id="u2-1-6">
+            <h2>Control Statements in JavaScript</h2>
+            <hr>
+            <ul>
+                <li><h3>If-else statements</h3>
+                    <ul>
+                        <li>if-else statements are used if a section of the code can only be executed if certain conditions are met</li>
+                        <li class="example-list"><em>Example:</em></li>
+                        <li class="embed-code">
+                            var x = 5; </br> </br>
+                            if (x &lt; 3) {</br></br>
+                            &nbsp;&nbsp;console.log("apples");</br>
+                            }</br></br>
+                            else {</br>
+                            &nbsp;&nbsp;console.log("oranges");</br>
+                            }</br></br>
+                            <em>// prints "oranges" to the console</em>
+                        </li>
+                    </ul>
+                </li>
+                <li><h3>Switch statements</h3>
+                    <ul>
+                        <li>switch statements are useful if you have multiple different conditions to use. In this case, switch statements are more readable than using if-else statements.</li>
+                        <li class="example-list"><em>Example:</em></li>
+                        <li class="embed-code">
+                            var animal = dog; </br> </br>
+                            switch (animal) {</br></br>
+                            &nbsp;&nbsp;case "cat":</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("meow!");</br></br>
+                            &nbsp;&nbsp;case "cow":</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("moo!");</br></br>                        &nbsp;&nbsp;case "dog":</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("woof!");</br></br>                        &nbsp;&nbsp;case "horse":</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("neigh!");</br></br>
+                            &nbsp;&nbsp;default:</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log("");</br></br>
+                            }</br></br>
 
-		<div class="u1-sec">
-			<h2>Sending a prompt that requires user to type in an input</h2>
-			<hr>
-			<p>This is another option for having a pop-up in a web page. JavaScript has a method for having the dialog window promt the user for input</p>
-			<ul>
-				<li class="example-list"><em>Example:</em></li>
-				<li class="embed-code">
-				  faveFood = window.prompt("What's your favourite food?");</strong>
-				</li>
-				<li class="example-list"> <em>Output:</em></li>
-					<li class="example-list"><img src="assets/images/unit1-2.JPG" class="screen-cap"></li>
-				<li>Here's another exaple of having a default message on the prompt box before the user types in a message</li>
-				<li class="example-list"><em>Example:</em></li>
-				<li class="embed-code">
-				  faveFood = window.prompt("What's your favourite food?", "pizza");</strong>
-				  &nbsp;&nbsp;
-				</li>
-				<li class="example-list"> <em>Output:</em></li>
-					<li class="example-list"><img src="assets/images/unit1-3.JPG" class="screen-cap"></li>
-			</ul>
-		</div>
+                            <em>// prints "woof!" to the console</em>
+                        </li>
+                        <li><em>Note: a default case should be use if in case any of the given cases doesn't work.</em></li>
+                    </ul>
+                </li>
+                <li><h3>While loop:</h3>
+                    <ul>
+                        <li>a while loop is used if a statement has to be executed multiple times while the condition is satisfied</li>
+                        <li class="example-list"><em>Example:</em></li>
+                        <li class="embed-code">
+                            var i = 1; </br>
+                            var str = "";</br></br>
+                            while (i &lt;= 5) {</br>
+                            &nbsp;&nbsp;str += i + " ";</br>
+                            &nbsp;&nbsp;i = i + 1;</br>
+                            }</br></br>
+                            console.log(str);</br></br>
 
-		<div class="u1-sec">
-        <h2>Dynamic Rendering in JavaScript</h2>
-        <hr>
-        <p>JavaScript can do variables, arithmetic, equality and relational operators</p>
-        <ul>
-            <li><h3>Variables</h3>
+                            <em>// prints "1 2 3 4 5 " to the console</em>
+                        </li>
+                    </ul>
+                </li>
+                <li><h3>For loop:</h3></li>
                 <ul>
-                    <li>variables is a way of storing values in memory so that they can be retrieved and used later</li>
+                    <li>a for loop is used if a statement has to be executed given a certain amount of times.</li>
                     <li class="example-list"><em>Example:</em></li>
                     <li class="embed-code">
-                        var x = 5; //declaring an integer</br>
-                        var y = "Hello World" //declaring a string
-                    </li>
-                    <li>Note: "=" is the assignment operator. It is used to assign values to variables. This operator should not be mistaken for the equality operator "==" <em>to be discussed a little bit later</em>.</li>
-                </ul>
-            </li>
-            <li><h3>Arithmetic Operators</h3>
-                <ul>
-                    <li>to do basic arithmetic in JavaScript:</li>
-                    <ul>
-                        <li class="example-list"><em>Examples:</em></li>
-                        <li class="embed-code">
-                            var a = 5 + 3; // addition </br>
-                            var b = a - 4; // subtraction </br>
-                            var c = 6 * 7; // multiplication </br>
-                            var d = a / b; // division</br>
-                            var e = 9 % 2; // remainder (mod)
-                        </li>
-                    </ul>
-                </ul>
-            </li>
-            <li><h3>Equality and Relational Operators</h3>
-                <ul>
-                    <li>This is used to compare values</li>
-                    <li>Comparing values is important in if..else statements and loops <em>(discussed in the next section)</em></li>
-                    <li>The result for doing equality and relational operators is a boolean: True or False</li>
-                    <ul>
-                        <li class="example-list"><em>Examples:</em></li>
+                        var str = "";</br></br>
+                        fot (var i = 1; i &lt;= 5; i++) {</br>
+                        &nbsp;&nbsp;str += i + " ";</br>
+                        }</br></br>
+                        console.log(str);</br></br>
 
-                        <li class="embed-code">
-                            var a = 5</br>
-                            var b = 3</br>
-                            var c = 5</br>
-                            </br>
-                            <em>// equality operators</em></br> 
-                            var d = a == 3; // equal to -- False </br>
-                            var e = a != 3 // not equal to -- True</br></br>
-                            <em>// relational operators</em></br>
-                            var f = a > b // greater than -- True</br>
-                            var g = b &lt; a // lessthan -- False</br>
-                            var h = a >= c // greater than or equal -- True</br>
-                            var i = b &lt;= c // greater than or equal -- True</br>
-                        </li>
-                    </ul>
+                        <em>// prints "1 2 3 4 5 " to the console</em>
+                    </li>
+                    <li><em>Note: Use for loop instead of while loop if you're certain about number of times it's goonna be repeated</em></li>
                 </ul>
-            </li>
-        </ul>
-		</div>
-    <div class="u1-sec">
-        <h2>Functions in JavaScript</h2>
-        <hr>
-        <p>Functions is a way to group statements together so that it can be reused later. Having functions makes the code more readable, and it also helps redundancy when a block of code is used multiple times.</p>
-        <ul>
-            <li class="example-list"><em>Example:</em></li>
-            <li class="embed-code">
-                var x = additionFunc(4,10)</br>
-                </br>
-                function additionFunc(a,b) {</br>
-                &nbsp;&nbsp;return a + b;</br>
-                }</br>
-            </li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-7">
+            <h2>JavaScript Arrays</h2>
+            <hr>
+            <ul>
+                <li>a single variable in java script can hold multiple values.</li>
+                <li class="example-list"><em>Example:</em></li>
+                <li class="embed-code">
+                    var animals = ["dog", "cat", "horse", "cow"];</br>
+                    var nums = [1, 2, 3, 4, 5];</br></br>
+                    console.log(animals[2]);</br></br>
+
+<<<<<<< HEAD
+                    <em>// prints "horse" to the console</em>
+                </li>
+                <li>Arrays are <em>zero-indexed</em>, meaning the first value has index 0, the second one has index 1, and so on. In the example above, animals[2] is used to retrieve the trid value in the array.</li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-8">
+            <h2>JavaScript HTML Document Object Model</h2>
+            <hr>
+            <ul>
+                <li>JavaScript and HTML are tied together using DOMs. With DOM, JavaScript is able to access and change elements in an HTML file.</li>
+                <li>In the example earlier about <a href="#u2-1">displaying a line of text using JavaScript</a>, it's using DOM. </li>
+                <li class="embed-code">
+                  document.writeln("&lt;h1/&gt;Hello World&lt;/h1&gt;");</strong></br>
+                </li>
+                <li>below are two more example of DOM methods.</li>
+                <li><h3>documentGetElementById and innerHTML</h3>
+                    <ul>
+                        <li>Another way to print a text using JavaScript is by adding it to an existing element in an HTML. The element is accessed by id and the method 'getElementById'. Then using 'innerHTML', the text in the element is changed"</li>
+                        <li class="example-list"><em>Example:</em></li>
+                        <li class="embed-code">
+                          &lt;head&gt;</br>
+                          &nbsp;&nbsp;
+                          &lt;meta-charset="utf-8"&gt;</br>
+                          &nbsp;&nbsp;
+                          &lt;script type="text/javascript"&gt;</br>
+                          <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                          document.getElementById("sampleElement").innerHTML = "Hello World";</strong></br>
+                          &nbsp;&nbsp;
+                          &lt;/script&gt;</br>
+                          &lt;/head&gt;</br>
+                          &lt;body&gt;</br>
+                          &nbsp;&nbsp;
+                          &lt;p id="sampleElement"&gt;&lt;/p&gt;</br>
+                          &lt;/body&gt;</br>
+                    </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-    
+    <div id="canvas" class="section">
+        <div class="u2-sec" id="u2-2">
+            <h1>HTML Canvas</h1>
+            <ul>
+                <li>The <strong>canval element</strong> provides a JavaScript Application Programming Interface (API) for drawing 2-D images</li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-1">
+            <h2>Canvas Coordinate System</h2>
+            <hr>
+            <ul>
+                <li>The first thing you need to know before starting with canvas is knowing the coordinate system. The origin is at the 
+                    upper-left side of the screen.
+                    <img src="assets/images/unit2-1.JPG" style="width: 350px; list-style:none"></li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-2">
+            <h2>Drawing attributes</h2>
+            <hr>
+            <ul>
+                <li>Below is an example on how to use the canvas element on HTML as well as using some drawing attributes to draw a rectangle</li>
+                <li class="example-list"><em>Example:</em></li>
+                    <li class="embed-code">
+                        &lt;head&gt;</br>
+                        &nbsp;&nbsp;
+                        &lt;meta charset="utf-8"&gt;</br>
+                        &nbsp;&nbsp;
+                        &lt;title&gt;Sample Embedded script&lt;/title&gt;</br>
+                        &lt;/head&gt;</br>
+                        &lt;body&gt;</br>
+                        &nbsp;&nbsp;
+                        &lt;canvas id="drawRectangle" width="300" height="100"</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        style="border: 1px solid black;"&gt;</br>
+                        &nbsp;&nbsp;
+                        &lt;/canvas&gt;</br>
+                        &nbsp;&nbsp;
+                        &lt;script type="text/javascript"&gt;</br>
+                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        var canvas = document.getElementById("drawRectangle");</strong></br>
+                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        var context = canvas.getContext("2d");</strong></br>
+                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        context.fillStyle = "yellow";</strong></br><strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        context.fillRect(5, 10, 200, 75);</strong></br><strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        context.strokeStyle = "royalblue";</strong></br><strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        context.lineWidth = 6;</strong></br><strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        context.strokeRect(4, 9, 201, 76);</strong></br>
+                        &nbsp;&nbsp;
+                        &lt;/script&gt;</br>
+                        &lt;/body&gt;</br>
+                </li>
+                <li class="example-list"><em>Output:</em></li>
+                <li class="example-list">
+                    <img src="assets/images/unit2-1-2.JPG" class="screen-cap">
+                </li>
+                <li>The width and the height of the canvas element should be specified. This will be the dimension of the drawing. It should also have an id so that the script will be able to identify it.</li>
+                <li>
+                    <strong>var context = canvas.getContext("2d");</strong></br>
+                    The getContext() method gets the context object. It represents the 2d rendering surface. The object also as the methods for drawing: fillStyle(), fillRect(), strokeStyle(), lineWidth(), strokeRect() are some of the examples (more examples of other methods on the next section)s. It also does font manipulation, color manipulation and other methods related to graphics.
+                </li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-3">
+            <h2>Drawing Complex Shapes with Paths</h2>
+            <hr>
+            <ul>
+                <li>Canvas can draw paths by specifying the coordinates where it begins, and the points where it goes to next.</li>
+                <li class="example-list"><em>Example:</em></li>
+                <li class="embed-code">
+                    &lt;body&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;canvas id="drawPath" width="400" height="200"</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    style="border: 1px solid black;"&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;/canvas&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;script type="text/javascript"&gt;</br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    var canvas = document.getElementById("drawPath");</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    var context = canvas.getContext("2d");</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.beginPath();</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.moveTo(10,30);</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.lineTo(390, 60);</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.lineTo(40, 90);</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.lineTo(360, 120);</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.lineTo(70, 150);</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.lineTo(330, 180);</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.lineWidth = 8;</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.lineJoin = "bevel";</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.lineCap = "butt";</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.strokeStyle = "purple";</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.stroke();</strong></br>   
+                    &nbsp;&nbsp;
+                    &lt;/script&gt;</br>
+                    &lt;/body&gt;</br>
+                </li>
+                <li class="example-list"><em>Output:</em></li>
+                <li class="example-list">
+                    <img src="assets/images/unit2-1-3.JPG" class="screen-cap">
+                </li>
+                <li>Here, we introduced more methods in the canvas context object: beginPath() which starts the drawing, and stroke() to finish it. lineTo() tells wo what coordinates the path should go to next. lineJoin() and lineCap() specifies what the joints and the ends respectivelly will look like. strokeStyle() specifies the color of the stroke.</li>
+            </ul>
+        </div>
+        <div class="u2-sec" id="u2-1-4"> 
+            <h2>Drawing Arcs</h2>
+            <hr>
+            <ul>
+                <li>Canvas can not only lines, it also has a way to draw arcs and curved lines.</li>
+                <li class="example-list"><em>Example:</em></li>
+                <li class="embed-code">
+                    &lt;body&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;canvas id="drawPath" width="225" height="110"</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    style="border: 1px solid black;"&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;/canvas&gt;</br>
+                    &nbsp;&nbsp;
+                    &lt;script type="text/javascript"&gt;</br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    var canvas = document.getElementById("drawArcs");</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    var context = canvas.getContext("2d");</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.beginPath();</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.arc(35, 50, 30, 3*Math.PI/2, Math.PI, false); </strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.strokeStyle = "purple";</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.stroke();</strong></br></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.beginPath();</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.arc(110, 50, 30, 0, Math.PI/2, true); </strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.strokeStyle = "purple";</strong></br>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    context.stroke();</strong></br> 
+                    &nbsp;&nbsp;
+                    &lt;/script&gt;</br>
+                    &lt;/body&gt;</br>
+                </li>
+                <li class="example-list"><em>Output:</em></li>
+                <li class="example-list"><img src="assets/images/unit2-1-4.JPG" class="screen-cap"></li>
+                <li>the arc() method has the following parameters: first two is the x and y coordinate of the center of the arc. the third parameter is the radius of the arc. The fourth and fifth parameter is the starting and ending angle respectivelly in radians. The image below shows where the angles are.</li>
+                <li class="example-list"><img src="assets/images/unit2-1-4-2.JPG" style="width:30%"></li>
+                <li class="example-list">The sixth parameter is optional. It tells the direction of the arc stroke. The value 'true' corresponds to counterclockwise, and 'false' corresponds to clockwise.</li>
+            </ul>
+        </div>
+    </div>
 </body>

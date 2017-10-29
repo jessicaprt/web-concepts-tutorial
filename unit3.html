@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<head>
-    <title>Unit 2 | Client-sede Scriptiong in Javascript</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript">
-        faveFood = window.prompt("What's your favourite food?", "pizza");
-    </script>
-</head>
-<body>
+<html></html>
+    <head>
+       <meta charset="utf-8">
+       <title>Drawing a rectangle</title>
+    </head>
+    <body>
+       <canvas id="drawArcs" width="225" height="100"
+         style="border: 1px solid black;">
+       </canvas>
+       <script type="text/javascript">
+            var canvas = document.getElementById("drawArcs");
+            var context = canvas.getContext("2d");
+            context.beginPath();
+            context.arc(35, 50, 30, 3*Math.PI/2, Math.PI, false); 
+            context.strokeStyle = "purple";
+            context.stroke();
+           
+            context.beginPath();
+            context.arc(110, 50, 30, 0, Math.PI/2, true); 
+            context.strokeStyle = "purple";
+            context.stroke();
+       </script>
+    </body>
+</html>

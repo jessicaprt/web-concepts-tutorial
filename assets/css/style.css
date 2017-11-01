@@ -78,17 +78,6 @@ nav li a:hover {
 .overview ul li {
     margin: 10px 0px;
 }
-/** Unit 1**/
-
-
-.section {
-    margin-top: 50px;
-}
-
-.u1-sec {
-    padding: 0px 50px;
-    margin-top: 50px;
-}
 
 .embed-code {
     font-family: 'Consolas', sans-serif;
@@ -110,6 +99,54 @@ nav li a:hover {
 .example-list {
 	list-style: none
 }
+
+/** Unit 1**/
+
+
+.section {
+    margin-top: 50px;
+}
+
+.u1-sec {
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+
+.u1-sec h2 {
+    color: #75b1a9;
+}
+
+.u1-sec h1 {
+    color: #75b1a9;
+}
+
+.u1-sec h3 {
+    color: #75b1a9;
+}
+
+.u1-sec li::before {
+    color: #75b1a9;
+}
+
+.unit1-overview {
+    background-color: #75b1a9;
+}
+
+.unit1-overview ul li {
+    list-style: none;
+}
+
+.unit1-overview ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.unit1-overview ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
 
 /** Unit 2 **/
 
@@ -152,3 +189,59 @@ nav li a:hover {
     font-weight: bold;
     color: #000;
 }
+
+/** Unit 3**/
+.u3-sec {
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+
+.u3-sec h2 {
+    color: #4f6457;
+}
+
+.u3-sec h1 {
+    color: #4f6457;
+}
+
+.u3-sec h3 {
+    color: #4f6457;
+}
+
+.u3-sec li::before {
+    color: #4f6457;
+}
+
+.unit3-overview {
+    background-color: #4f6457;
+    color: #fff;
+}
+
+.unit3-overview ul li {
+    list-style: none;
+}
+
+.unit3-overview ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.unit3-overview ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.method {
+    font-family: "Consolas"
+}
+
+table td,th {
+    padding: 8px 35px;
+}
+
+tr {
+    background-color: rgba(79, 100, 87, 0.8);   
+    color: #eee
+}
+

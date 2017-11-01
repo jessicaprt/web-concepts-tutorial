@@ -79,6 +79,7 @@ nav li a:hover {
     margin: 10px 0px;
 }
 
+
 .embed-code {
     font-family: 'Consolas', sans-serif;
     font-size: 13px;
@@ -98,6 +99,11 @@ nav li a:hover {
 
 .example-list {
 	list-style: none
+}
+
+.quiz {
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 /** Unit 1**/
@@ -190,6 +196,13 @@ nav li a:hover {
     color: #000;
 }
 
+#u2-start-quiz {
+    color: #fff;
+    background-color: #d9b44a;
+    height: 30vh;
+    padding: 30px 100px;
+}
+
 /** Unit 3**/
 .u3-sec {
     padding: 0px 50px;
@@ -230,6 +243,13 @@ nav li a:hover {
     text-decoration: none;
     font-weight: bold;
     color: #000;
+}
+
+#u3-start-quiz {
+    color: #fff;
+    background-color: #4f6457;
+    height: 30vh;
+    padding: 30px 100px;
 }
 
 .method {

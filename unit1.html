@@ -18,96 +18,417 @@
         </nav>
     </div>	
     <div class="overview unit1-overview">
-        <h1>The Web, HTML and CSS</h1>
+        <h1>HTML and CSS</h1>
         <h2>In this chapter:</h2>
         <ul>
+			<li><a href="#html"><strong>HTML</strong></a>
+				<ul>
+					<li><a href="#u1-1-1">Basic HTML elements</a></li>
+					<ul>
+						<li><a href="#head">head</a></li>
+						<li><a href="#body">body</a></li>
+						<li><a href="#div">div</a></li>
+						<li><a href="#p">p</a></li>
+						<li><a href="#li">li</a></li>
+						<li><a href="#ul">ul</a></li>
+						<li><a href="#ol">ol</a></li>
+						<li><a href="#a">a</a></li>
+						<li><a href="#table">table</a></li>
+					</ul>
+				</ul>
+			</li>
+			<li><a href="#css"><strong>CSS</strong></a>
+				<ul>
+					<li><a href="u1-2-1">Validating CSS</a></li>
+					<li><a href="u1-2-2">How to add stylesheets to HTML files</a></li>
+					<li><a href="u1-2-3">How-to Styling: adding styles to an HTML page</a></li>
+					<li><a href="u1-2-4">Conflicting Styles: The Cascading Style Sheet</a></li>
+					<li><a href="u1-2-5">Positioning Eleements</a></li>
+					<li><a href="u1-2-6">Media Queries</a></li>
+				</ul>
+			</li>
         </ul>
-    </div>
-    <div id="web" class="section">
     </div>
     <div id="html" class="section">
         <div class="u1-sec">
             <h1>HTML</h1>
+			<ul>
+				<li>Hypertext Markup Language (HTML) is used to create the structure of a webpage.</li>
+				<li class="example-list"><em>Example:</em></li>
+				<li class="embed-code">
+					&lt;!DOCTYPE html&gt;<br>
+					&lt;head&gt;<br>
+					&nbsp;&nbsp;
+					&lt;title&gt;Sample webpage&lt;/title&gt;<br>
+					&nbsp;&nbsp;
+					&lt;meta charset="utf-8"&gt;<br>
+					&lt;/head&gt;<br>
+					&lt;body&gt;<br>
+					&nbsp;&nbsp;
+					&lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+					&lt;/body&gt;				
+				</li>
+			</ul>
+			<div class="u1-sec" id="u1-1-1">
+				<h2>Basic HTML elements</h2>
+				<hr>
+				<ul>
+					<li>The structure of the HTML file, and hence the webpage, is defined by the HTML elements. Below are some of the most useful HTML elements and their functionalities</li>
+					<br
+					<li>
+						<h3 class="method" id="head">head</h3>
+						<hr>
+						<ul>
+							<li>the head element defines some of the properties of the webpage including the title, meta information as well as <a href="#css">stylesheets</a> and <a href="unit2.html">scripts</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="method" id="body">body</h3>
+						<hr>
+						<ul>
+							<li>the content of the web page is contained in the body element.</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="method" id="div">div</h3>
+						<hr>
+						<ul>
+							<li>groups elements and page contents in a section</li>
+							<li class="example-list"><em>Example:</em></li>
+							<li class="embed-code">
+								&lt;div&gt;<br>
+								&nbsp;&nbsp;
+								&lt;p&gt;<strong>Here I will talk about my favourite movies...</strong> &lt;/p&gt;<br>
+								&lt;/div&gt;<br><br>
+								&lt;div&gt;<br>
+								&nbsp;&nbsp;
+								&lt;p&gt;<strong>Here I will talk about my favourite food...</strong> &lt;/p&gt;<br>
+								&lt;/div&gt;<br>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="method" id="p">p</h3>
+						<hr>
+						<ul>
+							<li><em>p</em> is used for paragraphs</li>
+							<li>From the example above, th element <em>p</em> was used within the div</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="method" id="li">li</h3>
+						<hr>
+						<ul>
+							<li>The element <em>li</em> enumerates list items in bullet form or numbered format</li>
+							<li>It's also usually nested within <em>&lt;ul&gt;</em> or <em>&lt;ol&gt; tags</em></li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="method" id="ul">ul</h3>
+						<hr>
+						<ul>
+							<li><em>&lt;ul&gt;</em> stands for <strong>unordered list</strong>. Meaning the list below doesn't require order and by default, will show a bullet point list</li>
+							<li class="example-list"><em>Example:</em></li>
+							<li class="embed-code">
+								&lt;h3&gt;list of European countries:&lt;/h3&gt;<br>
+								&lt;ul&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;France&lt;/li&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;Italy&lt;/li&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;Spain&lt;/li&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;Netherlands&lt;/li&gt;<br>
+								&lt;/ul&gt;							
+							</li>
+							<li class="example-list">Output:</li>
+							<li class="example-list screen-cap"><img src="assets/images/unit1-1-1.JPG"</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="method" id="ol">ol</h3>
+						<hr>
+						<ul>
+							<li><em>&lt;ol&gt;</em> stands for <strong>ordered list</strong>. This is used instead of using <em>ul</em> onlists that requires numbering.</li>
+							<li class="example-list"><em>Example:</em></li>
+							<li class="embed-code">
+								&lt;h3&gt;My top 5 favourite TV series:&lt;/h3&gt;<br>
+								&lt;ol&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;Friends&lt;/li&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;Riverdale&lt;/li&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;Modern Family&lt;/li&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;Stranger Things&lt;/li&gt;<br>
+								&nbsp;&nbsp;
+								&lt;li&gt;The Office&lt;/li&gt;<br>
+								&lt;/ol&gt;							
+							</li>
+							<li class="example-list">Output:</li>
+							<li class="example-list screen-cap"><img src="assets/images/unit1-1-2.JPG"</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="method" id="a">a</h3>
+						<hr>
+						<ul>
+							<li>This element is a way to add hyperlinks within the web page.</li>
+							<li class="example-list"><em>Example:</em></li>
+							<li class="embed-code">
+								&lt;p&gt;Click &lt;a href="www.example.com"&gt;here&lt;/a&gt; to go to the example page.&lt;/p&gt;
+							</li>
+							<li class="example-list screen-cap">
+								<img src="assets/images/unit1-1-3.JPG">
+							</li>
+							<li><em>clicking the hyperlink goes to the link specified: example.com</em></li>
+							<li><em>href</em> is the attribute used with the <em>a</em> to specify the link that's attached.</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="method" id="table">table</h3>
+						<hr>
+						<ul>
+							<li>This element creates a table in the webpage. There are also some other sub-elements that makes up a table.</li>
+							<table class="u1-table">
+								<tr>
+									<th>element</th>
+									<th>description</th>
+								</tr>
+								<tr>
+									<td>tr</td>
+									<td>specifies the row</td>
+								</tr>
+								<tr>
+									<td>th</td>
+									<td>gives the column header/title</td>
+								</tr>
+								<tr>
+									<td>td</td>
+									<td>specifies the column for each row </td>
+								</tr>
+							</table>
+							<li class="example-list"><em>Example:	</em></li>
+							<li class="embed-code">
+								&lt;head&gt;<br>
+								&nbsp;&nbsp;
+								&lt;style&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								table, th, td {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								border: 1px solid black;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								th, td {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								padding: 5px 30px;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+								&nbsp;&nbsp;
+								&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+								
+								&lt;body&gt;<br>
+								&nbsp;&nbsp;
+								&lt;table&gt;<br>
+								
+								&nbsp;&nbsp;
+								&lt;table&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;th&gt;Province&lt;/th&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;th&gt;Capital&lt;/th&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;British Columbia&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Victoria&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Alberta&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Edmonton&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Saskatchewan&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Regina&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Manitoba&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Winnipeg&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Ontario&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Toronto&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Quebec&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Quebec City&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Nova Scotia&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Halifax&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;New Brunswick&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Fredericton&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Prince Edward Island&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Charlottetoen&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;Newfoundland and Labrador&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;td&gt;St. John's&lt;/td&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&lt;/tr&gt;<br>
+								
+								&nbsp;&nbsp;
+								&lt;/table&gt;<br>
+								
+								&lt;/body&gt;<br>
+							</li>
+							<li class="example-list"><em>Output:</em></li>
+							<li class="example-list screen-cap"><img src="assets/images/unit1-1-4.JPG"></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="u1-sec" id="u1-1-3">
+				<h2></h2>
+			</div>
         </div>
     </div>
     <div id="css" class="section">
          <div class="u1-sec">
             <h1>CSS: Cascading Style Sheets</h1>
-            <ul>
-                <li>CSS is used to “style” web pages</li>
-                <li>it is used to specify presentation of elements separately from the structure of the document</li>
-            </ul>
+			<ul>
+				<li>CSS is used to “style” web pages</li>
+				<li>it is used to specify presentation of elements separately from the structure of the document</li>
+			</ul>
+			<div class="u1-sec" id="u1-2-1">
+				<h2>Validating CSS</h2>
+				<hr>
+				<ul><li>you can validate your CSS file by going to jigsaw.w3.org/css-validator/</li></ul>
+			</div>
+			<div class="u1-sec" id="u1-2-2">
+				<h2>How to add a stylesheet to an HTML file</h2>
+				<hr>
+				<p>There are three different ways to incorporate styles to an HTML file</p>
+				<ul>
+					<li><h3>Inline styles</h3>
+						<ul>
+							<li>styles applied within the HTML element</li>
+							<li><em>Example:</em></li>
+							<li class="embed-code">&lt;p style=&#8220;font-size:20px;&#8221;&gt;&lt;/p&gt;</li>
+						</ul>
+					</li>
+					<li><h3>Embedded Style Sheets</h3>
+						<ul>
+							<li>Style are applied within the HTML file, in the head section of the file</li>
+							<li><em>Example:</em></li>
+							<li class="embed-code">
+								&lt;head&gt;<br>
+								&nbsp;&nbsp;&lt;style type=&#8220;text/css&#8221;&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;{ /* stylesheet statemets go here */ }<br>
+								&nbsp;&nbsp;&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+							</li>
+						</ul>
+					</li>
+					<li><h3>External Style Sheets</h3>
+						<ul>
+							<li>styles are in a separate .css file and referenced in the head of the HTML file</li>
+							<li><em>Example:</em></li>
+							<li class="embed-code">
+								&lt;head&gt;<br>
+								&nbsp;&nbsp;&lt;link rel=&#8220;stylesheet&#8221; href=&#8220;style.css&#8221;/&gt;<br>
+								&lt;/head&gt;<br>
+							</li>
+						</ul>
+					</li>
+					<h3>Mime Types</h3>
+				</ul>
+			</div>
+			<div class="u1-sec" id="u2-2-3">
+				<h2>How-to Styling: adding styles to an HTML page</h2>
+				<hr>
+				<ul>
+					<li>grabbing elements, class, id</li>
+					<li>Most common css elements</li>
+					<ul><li>Background, border, margin, padding, font, color,</li></ul>
+					<li>CSS Units</li>
+				</ul>
+			</div>
+			<div class="u1-sec" id="u2-2-4">
+				<h2>Conflicting Styles: The Cascading Style Sheet</h2>
+				<hr>
+				<p>Conflicting styles, styles cascade – follows the latest implementation/declaration</p>
+			</div>
+			<div class="u1-sec" id="u2-2-5">
+				<h2>Positioning Eleements</h2>
+				<hr>
+				<p>z-index (go to w3schools)</p>
+			</div>
+			<div class="u1-sec" id="u2-2-6">
+				<h2>Media Queries</h2>
+				<hr>
+			</div>
         </div>
-        <div class="u1-sec">
-            <h2>Validating CSS</h2>
-            <hr>
-            <ul><li>you can validate your CSS file by going to jigsaw.w3.org/css-validator/</li></ul>
-        </div>
-        <div class="u1-sec">
-            <h2>How to add a stylesheet to an HTML file</h2>
-            <hr>
-            <p>There are three different ways to incorporate styles to an HTML file</p>
-            <ul>
-                <li><h3>Inline styles</h3>
-                    <ul>
-                        <li>styles applied within the HTML element</li>
-                        <li><em>Example:</em></li>
-                        <li class="embed-code">&lt;p style=&#8220;font-size:20px;&#8221;&gt;&lt;/p&gt;</li>
-                    </ul>
-                </li>
-                <li><h3>Embedded Style Sheets</h3>
-                    <ul>
-                        <li>Style are applied within the HTML file, in the head section of the file</li>
-                        <li><em>Example:</em></li>
-                        <li class="embed-code">
-                            &lt;head&gt;</br>
-                            &nbsp;&nbsp;&lt;style type=&#8220;text/css&#8221;&gt;</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;{ /* stylesheet statemets go here */ }</br>
-                            &nbsp;&nbsp;&lt;/style&gt;</br>
-                            &lt;/head&gt;</br>
-                        </li>
-                    </ul>
-                </li>
-                <li><h3>External Style Sheets</h3>
-                    <ul>
-                        <li>styles are in a separate .css file and referenced in the head of the HTML file</li>
-                        <li><em>Example:</em></li>
-                        <li class="embed-code">
-                            &lt;head&gt;</br>
-                            &nbsp;&nbsp;&lt;link rel=&#8220;stylesheet&#8221; href=&#8220;style.css&#8221;/&gt;</br>
-                            &lt;/head&gt;</br>
-                        </li>
-                    </ul>
-                </li>
-                <h3>Mime Types</h3>
-            </ul>
-        </div>
-
-        <div class="u1-sec">
-            <h2>How-to Styling: adding styles to an HTML page</h2>
-            <hr>
-            <ul>
-                <li>grabbing elements, class, id</li>
-                <li>Most common css elements</li>
-                <ul><li>Background, border, margin, padding, font, color,</li></ul>
-                <li>CSS Units</li>
-            </ul>
-        </div>
-
-        <div class="u1-sec">
-            <h2>Conflicting Styles: The Cascading Style Sheet</h2>
-            <hr>
-            <p>Conflicting styles, styles cascade – follows the latest implementation/declaration</p>
-        </div>
-
-        <div class="u1-sec">
-            <h2>Positioning Eleements</h2>
-            <hr>
-            <p>z-index (go to w3schools)</p>
-        </div>
-        <div class="u1-sec">
-            <h2>Media Queries</h2>
-            <hr>
-        </div>
+    </div>
+	<div id="u1-start-quiz" class="section">
+        <h2 class="quiz"><em>Test your knowledge:</em></h2>
+        <a href="unit2-quiz.html" class="button quiz-button">Start Quiz</a>
     </div>
 </body>

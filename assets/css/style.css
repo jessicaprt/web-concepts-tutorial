@@ -106,6 +106,10 @@ nav li a:hover {
     margin-bottom: 50px;
 }
 
+table td,th {
+    padding: 8px 35px;
+}
+
 /** Unit 1**/
 
 
@@ -153,6 +157,17 @@ nav li a:hover {
     color: #000;
 }
 
+.u1-table tr {
+    background-color: #75b1a9;   
+    color: #fff;
+}
+
+#u1-start-quiz {
+    color: #fff;
+    background-color: #75b1a9;
+    height: 30vh;
+    padding: 30px 100px;
+}
 
 /** Unit 2 **/
 
@@ -256,12 +271,8 @@ nav li a:hover {
     font-family: "Consolas"
 }
 
-table td,th {
-    padding: 8px 35px;
-}
-
-tr {
+.u3-table tr {
     background-color: rgba(79, 100, 87, 0.8);   
-    color: #eee
+    color: #eee;
 }
 

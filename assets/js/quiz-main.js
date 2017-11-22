@@ -1,9 +1,6 @@
 function checkQuiz() {
     console.log("checking quiz");
     for (var i=0; i < questions.length; i++) {
-        
-//        console.log("qlength: " + questions.length);
-        console.log("checking: q-" + i);
         var radioOptions = document.getElementsByName("q-" + (i));
         var chosenButton = getOption(radioOptions);
         
@@ -27,7 +24,7 @@ function checkQuiz() {
     var results = document.getElementById("result");
     results.innerHTML = "";
 
-    results.innerHTML += '<a href="unit1-quiz.html" class="quiz-button">Take quiz again!</a><br>';
+    results.innerHTML += '<a href="' + quizLink + '" class="quiz-button quiz-button-' + chapter + '">Take quiz again!</a><br>';
 
     results.innerHTML += '<p class="start-result">Result: ' + (questions.length - allWrongAns.length) 
                           + '/' + questions.length 

@@ -1,6 +1,8 @@
 var questionElements = [];
 var numQuestions = 10;
 var questions;
+var chapter = 1;
+var quizLink = "unit1-quiz.html"
 
 
 var allWrongAns = [];

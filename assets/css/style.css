@@ -101,7 +101,7 @@ nav li a:hover {
 	list-style: none
 }
 
-.quiz {
+.quiz-sec {
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -287,17 +287,26 @@ table td,th {
 
 .result {
     padding: 10px 50px;
-    margin-top: -40px;
+    margin-top: 40px;
 }
 
 .quiz-button {
+    margin-top: 50px;
     padding: 10px 30px;
     border-radius: 8px;
     background-color: rgba(0,0,0,0);
-    color: #75b1a9;
     font-weight: bold;
-    border: 2px solid #75b1a9;
     text-decoration: none;
+}
+
+.quiz-button-1 {
+    border: 2px solid #75b1a9;
+    color: #75b1a9;
+}
+
+.quiz-button-2 {
+    border: 2px solid #d9b44a;
+    color: #d9b44a;
 }
 
 .start-result {

@@ -21,7 +21,7 @@ function generateQuiz() {
                 ['"="', true],
                 ['"=="', false],
                 ['"==="', false]       
-            ], 0),
+            ]),
         
         /** QUESTION 2 **/
         new quiz(
@@ -31,7 +31,7 @@ function generateQuiz() {
                 ["function", false], 
                 ["variable", false], 
                 ["var", true] 
-            ], 3),
+            ]),
         
         /** QUESTION 3 **/
         new quiz(
@@ -41,7 +41,7 @@ function generateQuiz() {
                 ["&lt;", false], 
                 ["&gt;", false],
                 ["&lt;=", true] 
-            ], 0),
+            ]),
         
         /** QUESTION 4 **/
         new quiz(
@@ -50,7 +50,7 @@ function generateQuiz() {
                 ["inputs", false],
                 ["parameters", true],
                 ["variables", false]
-            ], 1),
+            ]),
         
         /** QUESTION 5 **/
         new quiz(
@@ -58,7 +58,7 @@ function generateQuiz() {
             [
                 ["True", true],
                 ["False", false]
-            ], 0),
+            ]),
         
         /** QUESTION 6 **/
         new quiz(
@@ -68,7 +68,7 @@ function generateQuiz() {
                 ["Stay and For", false],
                 ["For and Loop", false],
                 ["While and For", true]
-            ], 3),
+            ]),
         
         /** QUESTION 7 **/
         new quiz(
@@ -78,7 +78,7 @@ function generateQuiz() {
                 ["getElement", false],
                 ["getElementById", true],
                 ["getElementId", false],
-            ], 2)        
+            ])        
         ];
     
     for (var i=0; i<questions.length; i++) {

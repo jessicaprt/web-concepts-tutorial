@@ -309,6 +309,11 @@ table td,th {
     color: #d9b44a;
 }
 
+.quiz-button-3 {
+    border: 2px solid #4f6457;
+    color: #4f6457;
+}
+
 .start-result {
     margin-top: 50px;
 }

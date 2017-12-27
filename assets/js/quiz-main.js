@@ -43,6 +43,14 @@ function getOption(radioOptions) {
     return -1;
 }
 
+function getRightAnswerIndex(currentQuestion) {
+    for (var i=0; i < currentQuestion.choices.length; i++) {
+        if (currentQuestion.choices[i][1] == true ) {
+            return i;
+        }
+    }
+}
+
 function showResults(resultsElement) {
     if (allWrongAns.length == 0) {
         resultsElement.innerHTML += '<br>';
@@ -52,6 +60,7 @@ function showResults(resultsElement) {
         for (var i=0; i<allWrongAns.length; i++) {
             var currentQuestion = allWrongAns[i][0];
             var currentChoiceIdx = allWrongAns[i][1];
+            var rightAnsIdx = getRightAnswerIndex(currentQuestion)
             
             resultsElement.innerHTML += '<br>';
             resultsElement.innerHTML += currentQuestion.question;
@@ -59,7 +68,7 @@ function showResults(resultsElement) {
                                         currentQuestion.choices[currentChoiceIdx][0] + 
                                         '</p>';
             resultsElement.innerHTML += '<p><strong>Correct answer</strong> : ' +
-                                        currentQuestion.choices[currentQuestion.rightAnsIdx][0] +
+                                        currentQuestion.choices[rightAnsIdx][0] +
                                         '</p>';
         }
     }   

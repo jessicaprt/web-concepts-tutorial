@@ -22,7 +22,7 @@ function generateQuiz() {
                 ["&lt;nl&gt;", false],
                 ["&lt;ol&gt;", true],
                 ["&lt;il&gt;", false]        
-            ], 2),
+            ]),
         
         /** QUESTION 2 **/
         new quiz(
@@ -30,7 +30,7 @@ function generateQuiz() {
             [
                 ["True", false],
                 ["False", true] 
-            ], 1),
+            ]),
         
         /** QUESTION 3 **/
         new quiz(
@@ -40,7 +40,7 @@ function generateQuiz() {
                 ["embed", false], 
                 ["link", false],
                 ["href", true] 
-            ], 3),
+            ]),
         
         /** QUESTION 4 **/
         new quiz(
@@ -48,7 +48,7 @@ function generateQuiz() {
             [
                 ["True", true],
                 ["False", false]
-            ], 0),
+            ]),
         
         /** QUESTION 5 **/
         new quiz(
@@ -58,7 +58,7 @@ function generateQuiz() {
                 ["tr", false],
                 ["th", false],
                 ["td", false],
-            ], 0),
+            ]),
         
         /** QUESTION 6 **/
         new quiz(
@@ -68,9 +68,9 @@ function generateQuiz() {
                 ["Creative Style Scripts", false],
                 ["Cascading Style Sheets", true],
                 ["Cascading Style Scripts", false]
-            ], 2),
+            ]),
         
-        /** QUESTION 1 **/
+        /** QUESTION 7 **/
         new quiz(
             "Which major HTML element defines some of the properties of the webpage including the title, meta information as well as stylesheets and scripts?",
             [
@@ -78,7 +78,7 @@ function generateQuiz() {
                 ["&lt;head&gt;", true],
                 ["&lt;body&gt;", false],
                 ["&lt;info&gt;", false],
-            ], 1)        
+            ])        
         ];
     
     for (var i=0; i<questions.length; i++) {

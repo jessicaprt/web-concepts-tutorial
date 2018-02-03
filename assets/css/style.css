@@ -317,3 +317,11 @@ table td,th {
 .start-result {
     margin-top: 50px;
 }
+
+#header {
+    padding-top: 20vh;
+    background-image: url("../images/background.JPG");
+    background-size: cover;
+    color: #fff;
+    font-size: 23px;
+}
